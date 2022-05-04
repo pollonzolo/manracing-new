@@ -1,0 +1,44 @@
+footer.contact {
+  background: $color-black-light;
+  color: $color-white;
+  // position: relative;
+  z-index: -2;
+  // scroll-snap-align: start;
+
+.wrap {
+
+
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // z-index: -2;
+
+.text-area {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+@media only screen and (max-width: $bp-large) {
+  flex-direction: column;
+  
+}
+
+.contact-list {
+   ul {
+     li {
+       i {
+
+       }
+
+       h4 {
+
+       }
+     }
+   }
+}
+}
+}
+
+
+}
