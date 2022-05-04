@@ -14,7 +14,6 @@
             <li>
               <i></i>
               <h4>address</h4>
-	<h4>address</h4>
             </li>
 
             <li>
