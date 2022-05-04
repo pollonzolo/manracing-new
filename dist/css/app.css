@@ -442,7 +442,7 @@ nav .hamburger {
 nav .hamburger .line {
   height: 0.4rem;
   width: 4rem;
-  background: #ff4545;
+  background: #fff;
   border-radius: 100px;
 }
 nav .hamburger .line:not(:last-child) {
