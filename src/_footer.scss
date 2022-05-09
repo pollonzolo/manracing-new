@@ -8,23 +8,34 @@ footer.contact {
 .wrap {
 
 
-
   // display: flex;
   // flex-direction: column;
   // justify-content: space-between;
   // z-index: -2;
+
+  .sec-title {
+    margin-bottom: 10rem;
+    @media only screen and (max-width: $bp-small) {
+      align-self: center;
+      margin-bottom: 0;
+    }
+
+  }
 
 .text-area {
 display: flex;
 align-items: center;
 justify-content: space-between;
 
-@media only screen and (max-width: $bp-large) {
+@media only screen and (max-width: $bp-small) {
   flex-direction: column;
-  
 }
 
 .contact-list {
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 3rem 0;
+  }
    ul {
      li {
        i {

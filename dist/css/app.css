@@ -68,6 +68,14 @@ section .wrap {
   flex-direction: column;
   justify-content: space-between;
 }
+@media only screen and (min-width: 75em) {
+  footer .wrap,
+section .wrap {
+    height: 47rem;
+    width: 120rem;
+    margin: 0 auto;
+  }
+}
 footer .background-text,
 section .background-text {
   position: absolute;
@@ -213,7 +221,6 @@ header .arrow img {
 }
 
 section.intro .wrap {
-  width: 70vw;
   justify-content: center;
 }
 section.intro .wrap p {
@@ -397,7 +404,7 @@ section.do-you .wrap .do-you-img {
   position: absolute;
   bottom: 8rem;
   right: 0;
-  width: 55%;
+  width: 50%;
 }
 @media only screen and (max-width: 37.5em) {
   section.do-you .wrap .do-you-img {
@@ -442,7 +449,7 @@ nav .hamburger {
 nav .hamburger .line {
   height: 0.4rem;
   width: 4rem;
-  background: #fff;
+  background: #ff4545;
   border-radius: 100px;
 }
 nav .hamburger .line:not(:last-child) {
@@ -523,13 +530,27 @@ footer.contact {
   color: #fff;
   z-index: -2;
 }
+footer.contact .wrap .sec-title {
+  margin-bottom: 10rem;
+}
+@media only screen and (max-width: 37.5em) {
+  footer.contact .wrap .sec-title {
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
 footer.contact .wrap .text-area {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 37.5em) {
   footer.contact .wrap .text-area {
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  footer.contact .wrap .text-area .contact-list {
+    margin: 3rem 0;
   }
 }

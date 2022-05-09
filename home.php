@@ -11,7 +11,10 @@ Template Name: Home-Page
 
 		<div class="hero">
 			<div class="hero-title">
-				<h1>historic<br>racing cars,<br>our <span class="red">passion</span></h1>
+				<h1>historic
+					<br>
+					racing cars,<br>
+					our <span class="red">passion</span></h1>
 			</div>
 		</div>
 

@@ -60,7 +60,7 @@ footer,
 section {
   padding: 0 7vw;
   position: relative;
-  scroll-snap-align: start;
+  scroll-snap-align: start  ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,6 +78,14 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media only screen and (min-width: $bp-largest) {
+      height: 47rem;
+    width: 120rem;
+    margin: 0 auto;
+    }
+
+    
   }
 
   .background-text {
