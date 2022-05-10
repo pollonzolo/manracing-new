@@ -20,6 +20,11 @@ body {
   background: #fff;
 }
 
+html,
+body {
+  overflow: hidden;
+}
+
 .ml-10 {
   margin-left: 10rem;
 }

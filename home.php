@@ -11,10 +11,9 @@ Template Name: Home-Page
 
 		<div class="hero">
 			<div class="hero-title">
-				<h1>historic
-					<br>
-					racing cars,<br>
-					our <span class="red">passion</span></h1>
+				<h1 class="hero-title-1">historic</h1>
+				<h1 class="hero-title-2">racing cars,</h1>
+				<h1 class="hero-title-3">our <span class="red">passion</span></h1>
 			</div>
 		</div>
 
@@ -38,17 +37,17 @@ Template Name: Home-Page
 
 				<div class="wrap">
 
-						<div class="sec-title">
+						<div class="sec-title sec-title__about">
 							<h1>man <span class="red">racing</span></h1>
 						</div>
 
 						<div class="text-area">
 
-						<div class="title">
+						<div class="title title__about">
 								<h3>Man Racing offers a variety of services thought exclusively for the niche of historic racing cars.</h3>
 						</div>
 
-						<div class="paragraph">
+						<div class="paragraph paragraph__about">
 							<p>
 	 						 Man Racing started from an idea of Antonio Maniero, who spent his life participating in free time, as an amateur driver in the most diverse car racing. On 2008 he decided to conjugate his passion for motorsport to a new activity, to make available to others his amount of experience matured in over 300 competitions: A range of services thought exclusively for the niche of historic cars, especially race ones, that can answer to the necessities of who wants to start practicing, but also who already practices this fascinating sector of motorsport. Then Man-Racing, motorsport branch of the family company Man-Meccanica Engineering, was born. He is assisted, depending on the case, by his sons Andrea, Massimo and Paolo, by a group of enthusiasts friends and a network made by operators of the field; this generates the overall know-how that can offer high quality answers to the most disparate requests.
 	 					 </p>
@@ -66,7 +65,8 @@ Template Name: Home-Page
 <!------ SALE ------>
 					<section class="sale">
 						<div class="wrap">
-							<div class="sec-title">
+
+							<div class="sec-title sec-title__sale">
 								<h1><span class="red">cars</span> on sale</h1>
 							</div>
 
@@ -112,17 +112,17 @@ Template Name: Home-Page
 
 	<div class="wrap">
 
-			<div class="sec-title">
+			<div class="sec-title sec-title__services">
 				<h1><span class="red">services</span></h1>
 			</div>
 
 			<div class="text-area">
 
-			<div class="title">
+			<div class="title title__services">
 					<h3>Man Racing offers a variety of services thought exclusively for the niche of historic racing cars.</h3>
 			</div>
 
-			<div class="paragraph">
+			<div class="paragraph paragraph__services">
 				<p>
 				 Man Racing started from an idea of Antonio Maniero, who spent his life participating in free time, as an amateur driver in the most diverse car racing. On 2008 he decided to conjugate his passion for motorsport to a new activity, to make available to others his amount of experience matured in over 300 competitions: A range of services thought exclusively for the niche of historic cars, especially race ones, that can answer to the necessities of who wants to start practicing, but also who already practices this fascinating sector of motorsport. Then Man-Racing, motorsport branch of the family company Man-Meccanica Engineering, was born. He is assisted, depending on the case, by his sons Andrea, Massimo and Paolo, by a group of enthusiasts friends and a network made by operators of the field; this generates the overall know-how that can offer high quality answers to the most disparate requests.
 			 </p>
@@ -141,12 +141,13 @@ Template Name: Home-Page
 					<section class="do-you">
 
 						<div class="wrap">
-							<div class="sec-title">
-								<h1>do you want to <span class="red">sell <br></span>your <span class="red">historic car</span>?</h1>
+							<div class="sec-title sec-title__do-you">
+								<h1 class="sec-title__do-you-1">do you want to <span class="red">sell</span></h1>
+								<h1 class="sec-title__do-you-2">your <span class="red">historic car</span>?</h1>
 							</div>
 							<!-- <p>Contact us by e-mail or call us. <br>We will be happy to help you!</p> -->
 
-							<button class="btn">
+							<button class="btn do-you-btn">
 								<a>let us know!</a>
 							</button>
 
