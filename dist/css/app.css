@@ -34,7 +34,7 @@ body {
 }
 
 span.red {
-  color: #ff4545;
+  color: #ff2727;
 }
 
 .container-2 {
@@ -135,7 +135,7 @@ h2 {
 h3 {
   font-family: "Staatliches", cursive;
   font-size: 4.8rem;
-  color: #ff4545;
+  color: #ff2727;
 }
 @media only screen and (max-width: 50em) {
   h3 {
@@ -173,7 +173,7 @@ button.btn {
   font-weight: 700;
   font-size: 1.7rem;
   border: none;
-  background: #ff4545;
+  background: #ff2727;
   color: #fff;
 }
 
@@ -448,13 +448,12 @@ nav a.custom-logo-link .custom-logo {
   height: auto;
 }
 nav .hamburger {
-  z-index: 2;
   cursor: pointer;
 }
 nav .hamburger .line {
   height: 0.4rem;
   width: 4rem;
-  background: #ff4545;
+  background: #ff2727;
   border-radius: 100px;
 }
 nav .hamburger .line:not(:last-child) {
@@ -465,15 +464,47 @@ nav .nav-links {
   width: 100%;
   height: 100vh;
   top: 0;
-  left: 0;
+  right: -100%;
   background: #383535;
-  z-index: 1;
-  opacity: 0;
-  pointer-events: none;
+  z-index: 2;
   transition: all ease 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+nav .nav-links .cross {
+  cursor: pointer;
+}
+nav .nav-links .cross .line {
+  height: 0.4rem;
+  width: 4rem;
+  margin: 0.6rem;
+  background: #ff2727;
+  border-radius: 100px;
+}
+nav .nav-links .cross .line-1 {
+  transform: translate(0px, 5px) rotate(45deg);
+}
+nav .nav-links .cross .line-2 {
+  transform: translate(0px, -5px) rotate(-45deg);
+}
+@media only screen and (max-width: 75em) {
+  nav .nav-links .cross .line-1 {
+    transform: translate(0px, 4px) rotate(45deg);
+  }
+  nav .nav-links .cross .line-2 {
+    transform: translate(0px, -4px) rotate(-45deg);
+  }
+}
+nav .nav-links .cross .nav-open {
+  position: absolute;
+  top: 6.2rem;
+  right: 7vw;
+}
+nav .nav-links .nav-open {
+  position: absolute;
+  top: 6.2rem;
+  right: 7vw;
 }
 nav .nav-links .menu-primary-container {
   text-align: center;
@@ -501,7 +532,7 @@ nav .nav-links .menu-primary-container ul.nav__menu li a::before {
   left: 0;
   width: 100%;
   height: 0.6rem;
-  background: #ff4545;
+  background: #ff2727;
   border-radius: 50px;
   opacity: 0;
   transition: ease-in 0.1s;
@@ -517,17 +548,13 @@ nav .nav-links .menu-primary-container ul.nav__menu li a::after {
   transition: ease-in 0.5s;
 }
 nav .nav-links .menu-primary-container ul.nav__menu li a:hover {
-  color: #ff4545;
+  color: #ff2727;
 }
 nav .nav-links .menu-primary-container ul.nav__menu li a:hover::before, nav .nav-links .menu-primary-container ul.nav__menu li a:focus::before, nav .nav-links .menu-primary-container ul.nav__menu li a:active::before {
   opacity: 1;
 }
 nav .nav-links .menu-primary-container ul.nav__menu li a:hover::after {
   transform: translateX(80rem);
-}
-nav .nav-links.open {
-  opacity: 1;
-  pointer-events: all;
 }
 
 footer.contact {

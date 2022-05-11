@@ -7,11 +7,25 @@
   \********************/
 /***/ (() => {
 
-var hamburger = document.querySelector(".hamburger");
-var navLinks = document.querySelector(".nav-links");
-hamburger.addEventListener("click", function () {
-  navLinks.classList.toggle("open");
-  hamburger.classList.toggle("hamburger-open");
+var navClosed = document.querySelector(".nav-closed");
+var navOpen = document.querySelector(".nav-open");
+var tlMenuOpen = gsap.timeline({
+  paused: true
+});
+tlMenuOpen.to(".nav-links", {
+  right: 0,
+  duration: 0.2
+}).from(".nav-links ul li", {
+  x: -200,
+  opacity: 0,
+  stagger: 0.1
+}, ">");
+navClosed.addEventListener("click", function () {
+  tlMenuOpen.play().timeScale(1);
+});
+navOpen.addEventListener("click", function () {
+  tlMenuOpen.timeScale(2);
+  tlMenuOpen.reverse();
 });
 ScrollTrigger.defaults({
   //toggleActions: "restart pause resume pause",
@@ -55,153 +69,75 @@ var tl7 = gsap.timeline({
   }
 });
 tl.from("a.custom-logo-link", {
-  x: -100,
+  y: -100,
   opacity: 0
 }).from(".hamburger", {
-  x: 100,
-  opacity: 0
-}, "<").from(".hero-title-1", {
-  x: -100,
-  opacity: 0
-}).from(".hero-title-2", {
-  x: -100,
-  opacity: 0
-}).from(".hero-title-3", {
-  x: -100,
-  opacity: 0
-});
-tl2.fromTo(".intro p", {
-  x: -100,
-  opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}).fromTo(".intro h3", {
-  x: 100,
-  opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}, "<");
-tl3.fromTo(".sec-title__about", {
   y: -100,
   opacity: 0
-}, {
-  y: 0,
-  opacity: 1
-}).fromTo(".title__about", {
+}, "<").from(".hero-title h1", {
+  x: -100,
+  opacity: 0,
+  stagger: 0.2
+}, "<+0.2");
+tl2.from(".intro p", {
   x: -100,
   opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}, "<").fromTo(".paragraph__about", {
+}).from(".intro h3", {
   x: 100,
   opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}, "<");
-tl4.fromTo(".sec-title__sale", {
-  y: -100,
+}, "<+0.1");
+tl3.from(".sec-title__about", {
+  x: -100,
   opacity: 0
-}, {
-  y: 0,
-  opacity: 1
-}).fromTo(".car-1", {
+}).from(".title__about", {
+  x: -100,
+  opacity: 0
+}, "<+0.1").from(".paragraph__about", {
+  x: 100,
+  opacity: 0
+}, "<+0.1");
+tl4.from(".sec-title__sale", {
+  x: 100,
+  opacity: 0
+}).from(".cars", {
+  y: 100,
+  opacity: 0,
+  stagger: 0.2
+}, "<").from("section.sale .wrap button", {
   y: 100,
   opacity: 0
-}, {
-  y: 0,
-  opacity: 1
-}).fromTo(".car-2", {
-  y: 100,
-  opacity: 0
-}, {
-  y: 0,
-  opacity: 1
-}).fromTo(".car-3", {
-  y: 100,
-  opacity: 0
-}, {
-  y: 0,
-  opacity: 1
-}).fromTo("section.sale .wrap button", {
-  y: 100,
-  opacity: 0
-}, {
-  y: 0,
-  opacity: 1
-});
-tl5.fromTo(".sec-title__services", {
-  y: -100,
-  opacity: 0
-}, {
-  y: 0,
-  opacity: 1
-}).fromTo(".title__services", {
+}, ">-0.3");
+tl5.from(".sec-title__services", {
   x: -100,
   opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}, "<").fromTo(".paragraph__services", {
+}).from(".title__services", {
+  x: -100,
+  opacity: 0
+}, "<+0.1").from(".paragraph__services", {
   x: 100,
   opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}, "<");
-tl6.fromTo(".sec-title__do-you", {
-  y: -100,
-  opacity: 0
-}, {
-  y: 0,
-  opacity: 1
-}).fromTo(".sec-title__do-you-1", {
+}, "<+0.1");
+tl6.from(".sec-title__do-you h1", {
+  x: -100,
+  opacity: 0,
+  stagger: 0.1
+}, "<+0.1").from("section.do-you .wrap button", {
   x: -100,
   opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}).fromTo(".sec-title__do-you-2", {
-  x: -100,
-  opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}).fromTo("section.do-you .wrap button", {
-  x: -100,
-  opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}).fromTo(".do-you-img", {
+}, "<+0.1").from(".do-you-img", {
   x: 100,
   opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-});
-tl7.fromTo("footer.contact .sec-title", {
-  y: -100,
-  opacity: 0
-}, {
-  y: 0,
-  opacity: 1
-}).fromTo(".contact-list", {
+}, "<+0.1");
+tl7.from("footer.contact .sec-title", {
   x: -100,
   opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-}).fromTo(".links", {
+}).from(".contact-list", {
+  x: -100,
+  opacity: 0
+}, "<+0.1").from(".links", {
   x: 100,
   opacity: 0
-}, {
-  x: 0,
-  opacity: 1
-});
+}, "<+0.1");
 
 /***/ }),
 

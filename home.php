@@ -11,9 +11,9 @@ Template Name: Home-Page
 
 		<div class="hero">
 			<div class="hero-title">
-				<h1 class="hero-title-1">historic</h1>
-				<h1 class="hero-title-2">racing cars,</h1>
-				<h1 class="hero-title-3">our <span class="red">passion</span></h1>
+				<h1>historic</h1>
+				<h1>racing cars,</h1>
+				<h1>our <span class="red">passion</span></h1>
 			</div>
 		</div>
 
@@ -142,8 +142,8 @@ Template Name: Home-Page
 
 						<div class="wrap">
 							<div class="sec-title sec-title__do-you">
-								<h1 class="sec-title__do-you-1">do you want to <span class="red">sell</span></h1>
-								<h1 class="sec-title__do-you-2">your <span class="red">historic car</span>?</h1>
+								<h1>do you want to <span class="red">sell</span></h1>
+								<h1>your <span class="red">historic car</span>?</h1>
 							</div>
 							<!-- <p>Contact us by e-mail or call us. <br>We will be happy to help you!</p> -->
 

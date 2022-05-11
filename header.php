@@ -15,12 +15,19 @@
  <nav class="nav .navigation">
  <?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } ?>
 
- <div class="hamburger">
+ <div class="hamburger nav-closed">
    <div class="line"></div>
    <div class="line"></div>
    <div class="line"></div>
  </div>
+ 
  <div class="nav-links">
+
+ <div class="cross nav-open">
+   <div class="line line-1"></div>
+   <div class="line line-2"></div>
+ </div>
+
    <?php wp_nav_menu(
 
   					array(
