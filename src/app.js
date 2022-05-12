@@ -1,5 +1,7 @@
 const navClosed = document.querySelector(".nav-closed");
 const navOpen = document.querySelector(".nav-open");
+const btn = document.querySelector("button.btn");
+const btn2 = document.querySelector("button.btn.do-you-btn");
 
 let tlMenuOpen = gsap.timeline({paused: true});
 tlMenuOpen.to( ".nav-links", {right: 0, duration: 0.2})
@@ -91,3 +93,16 @@ tl6.from(".sec-title__do-you h1", { x: -100, opacity: 0, stagger: 0.1}, "<+0.1")
 tl7.from("footer.contact .sec-title", { x: -100, opacity: 0})
 .from(".contact-list", { x: -100, opacity: 0}, "<+0.1")
 .from(".links", { x: 100, opacity: 0}, "<+0.1");
+
+
+
+gsap.utils.toArray(btn).forEach(btn => {
+  
+});
+
+let hover = gsap.to(btn, {scale: 1.05, duration: 0.2, paused: true});
+  btn.addEventListener("mouseenter", () => hover.play());
+  btn.addEventListener("mouseleave", () => hover.reverse());
+let hover2 = gsap.to(btn2, {scale: 1.05, duration: 0.2, paused: true});
+  btn2.addEventListener("mouseenter", () => hover2.play());
+  btn2.addEventListener("mouseleave", () => hover2.reverse());

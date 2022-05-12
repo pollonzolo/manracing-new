@@ -10,7 +10,7 @@ $color-red: #ff2727;
 $color-black-light: #383535;
 $color-black-light-2: #555555; //FONT
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Staatliches", cursive;
+$font-secondary: "Bebas Neue", cursive;
 $font-japanese: "Noto Sans JP", sans-serif;
 
 * {
@@ -169,6 +169,8 @@ a {
   text-decoration: none;
   color: $color-white;
   font-family: $font-primary;
+  z-index: 1;
+
 }
 ////////////// BUTTONS
 button.btn {
@@ -181,4 +183,7 @@ button.btn {
   border: none;
   background: $color-red;
   color: $color-white;
-}
+  border: 2px solid #ff2727;
+  cursor: pointer;
+  }
+

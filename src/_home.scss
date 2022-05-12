@@ -128,7 +128,7 @@ section.sale {
     align-items: center;
 
     .sec-title {
-
+line-height: .8rem;
       @media only screen and (min-width: $bp-small) {
         align-self: flex-end;
       }
@@ -148,6 +148,17 @@ section.sale {
       .cars {
         position: relative;
         width: 40rem;
+        overflow: hidden;
+        
+
+        &:hover {
+
+          img {
+            
+            transform: scale(1);
+          }
+
+        }
 
         img {
           width: 100%;
@@ -155,6 +166,8 @@ section.sale {
           object-fit: cover;
           z-index: -1;
           filter: brightness(50%);
+          transform: scale(1.05);
+          transition: ease-in-out .4s;
         }
 
         .car-name {
@@ -230,6 +243,7 @@ section.services {
 }
 //////////// DO YOU
 section.do-you {
+  overflow-x: hidden;
   .wrap {
     justify-content: center;
 

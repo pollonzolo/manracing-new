@@ -38,9 +38,11 @@
 
 				</div>
 
-				<div class="background-text background-text__white">
+			<!--	<div class="background-text background-text__white">
 					<span>contact</span>
 				</div>
+-->
+
         <?php wp_footer(); ?>
 
         </div>

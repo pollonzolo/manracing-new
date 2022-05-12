@@ -9,6 +9,8 @@
 
 var navClosed = document.querySelector(".nav-closed");
 var navOpen = document.querySelector(".nav-open");
+var btn = document.querySelector("button.btn");
+var btn2 = document.querySelector("button.btn.do-you-btn");
 var tlMenuOpen = gsap.timeline({
   paused: true
 });
@@ -138,6 +140,29 @@ tl7.from("footer.contact .sec-title", {
   x: 100,
   opacity: 0
 }, "<+0.1");
+gsap.utils.toArray(btn).forEach(function (btn) {});
+var hover = gsap.to(btn, {
+  scale: 1.05,
+  duration: 0.2,
+  paused: true
+});
+btn.addEventListener("mouseenter", function () {
+  return hover.play();
+});
+btn.addEventListener("mouseleave", function () {
+  return hover.reverse();
+});
+var hover2 = gsap.to(btn2, {
+  scale: 1.05,
+  duration: 0.2,
+  paused: true
+});
+btn2.addEventListener("mouseenter", function () {
+  return hover2.play();
+});
+btn2.addEventListener("mouseleave", function () {
+  return hover2.reverse();
+});
 
 /***/ }),
 

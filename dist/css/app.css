@@ -88,7 +88,7 @@ section .background-text {
   left: 6rem;
   z-index: -1;
   font-size: 31rem;
-  font-family: "Staatliches", cursive;
+  font-family: "Bebas Neue", cursive;
   color: transparent;
   opacity: 0.15;
 }
@@ -118,7 +118,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 4px;
   line-height: 1;
-  font-family: "Staatliches", cursive;
+  font-family: "Bebas Neue", cursive;
 }
 @media only screen and (max-width: 37.5em) {
   h1 {
@@ -128,12 +128,12 @@ h1 {
 }
 
 h2 {
-  font-family: "Staatliches", cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 6.4rem;
 }
 
 h3 {
-  font-family: "Staatliches", cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 4.8rem;
   color: #ff2727;
 }
@@ -144,7 +144,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Staatliches", cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 3.2rem;
   color: #fff;
 }
@@ -163,6 +163,7 @@ a {
   text-decoration: none;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  z-index: 1;
 }
 
 button.btn {
@@ -175,6 +176,8 @@ button.btn {
   border: none;
   background: #ff2727;
   color: #fff;
+  border: 2px solid #ff2727;
+  cursor: pointer;
 }
 
 header {
@@ -204,7 +207,7 @@ header .hero {
 }
 header .hero .hero-title {
   color: white;
-  font-family: "Staatliches", cursive;
+  font-family: "Bebas Neue", cursive;
 }
 header .hero h3 {
   font-size: 4rem;
@@ -295,6 +298,9 @@ section.about .wrap .text-area .paragraph p {
 section.sale .wrap {
   align-items: center;
 }
+section.sale .wrap .sec-title {
+  line-height: 0.8rem;
+}
 @media only screen and (min-width: 37.5em) {
   section.sale .wrap .sec-title {
     align-self: flex-end;
@@ -316,6 +322,10 @@ section.sale .wrap .latest-cars {
 section.sale .wrap .latest-cars .cars {
   position: relative;
   width: 40rem;
+  overflow: hidden;
+}
+section.sale .wrap .latest-cars .cars:hover img {
+  transform: scale(1);
 }
 section.sale .wrap .latest-cars .cars img {
   width: 100%;
@@ -324,6 +334,8 @@ section.sale .wrap .latest-cars .cars img {
      object-fit: cover;
   z-index: -1;
   filter: brightness(50%);
+  transform: scale(1.05);
+  transition: ease-in-out 0.4s;
 }
 section.sale .wrap .latest-cars .cars .car-name {
   position: absolute;
@@ -379,6 +391,9 @@ section.services .wrap .text-area .paragraph p {
   color: #fff;
 }
 
+section.do-you {
+  overflow-x: hidden;
+}
 section.do-you .wrap {
   justify-content: center;
 }
@@ -464,7 +479,7 @@ nav .nav-links {
   width: 100%;
   height: 100vh;
   top: 0;
-  right: -100%;
+  right: -150%;
   background: #383535;
   z-index: 2;
   transition: all ease 0.2s;
@@ -516,7 +531,7 @@ nav .nav-links .menu-primary-container ul.nav__menu li a {
   position: relative;
   color: white;
   text-decoration: none;
-  font-family: "Staatliches", cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 10rem;
   transition: ease 0.4s;
 }

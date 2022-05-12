@@ -10,7 +10,7 @@ function poltheme_script_enqueue() {
   wp_enqueue_script('jquery', "https://code.jquery.com/jquery-3.6.0.min.js", array(), '1.0.0', true);
 
   wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap', false);
-  wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css2?family=Staatliches&display=swap', false);
+  wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet', false);
   wp_enqueue_style('googlefont-2', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap', false);
   // wp_enqueue_style('stylesheet', '/dist/app.css', false);
   wp_enqueue_script('svg', 'https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js', array(), '1.0.0', true);

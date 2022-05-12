@@ -56,10 +56,11 @@ Template Name: Home-Page
 				</div>
 
 
-
+<!--
 				<div class="background-text background-text__white">
 					<span>MAN RACING</span>
 				</div>
+-->
 			</section>
 
 <!------ SALE ------>
@@ -72,23 +73,23 @@ Template Name: Home-Page
 
 							<div class="latest-cars">
 								<div class="cars car-1">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/about.jpg" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/911.jpg" alt="">
 										<div class="car-name">
-											<h4>car 1</h4>
+											<h4>PORSCHE 911 Series 993</h4>
 										</div>
 								</div>
 
 								<div class="cars car-2">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/about.jpg" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/131.jpg" alt="">
 										<div class="car-name">
-											<h4>car 2</h4>
+											<h4>131 ABARTH</h4>
 										</div>
 								</div>
 
 								<div class="cars car-3">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/about.jpg" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/csw.jpg" alt="">
 										<div class="car-name">
-											<h4>car 3</h4>
+											<h4>SIERRA COSWORTH 4X4</h4>
 										</div>
 								</div>
 							</div>
@@ -99,9 +100,11 @@ Template Name: Home-Page
 						</div>
 
 
-						<div class="background-text background-text__black">
+						<!--
+							<div class="background-text background-text__black">
 							<span>cars on sale</span>
 						</div>
+-->
 
 					</section>
 <!------ SERVICES ------>
@@ -129,10 +132,11 @@ Template Name: Home-Page
 			</div>
 		</div>
 	</div>
-
+<!--
 	<div class="background-text background-text__white">
 		<span>services</span>
 	</div>
+-->
 
 </section>
 
@@ -148,7 +152,7 @@ Template Name: Home-Page
 							<!-- <p>Contact us by e-mail or call us. <br>We will be happy to help you!</p> -->
 
 							<button class="btn do-you-btn">
-								<a>let us know!</a>
+								<a>let us know!</a>	
 							</button>
 
 							<div class="do-you-img">
