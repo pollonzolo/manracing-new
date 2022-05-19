@@ -4,6 +4,17 @@ Template Name: Home-Page
 
 <?php get_header(); ?>
 
+<!-- LAST CARS ON SALE -->
+<?php $img_1 = get_field('car_photo_1')?>
+<?php $img_2 = get_field('car_photo_2')?>
+<?php $img_3 = get_field('car_photo_3')?>
+<?php $url_1 = get_field('car_link_1')?>
+<?php $url_2 = get_field('car_link_2')?>
+<?php $url_3 = get_field('car_link_3')?>
+<?php $name_1 = get_field('car_name_1')?>
+<?php $name_2 = get_field('car_name_2')?>
+<?php $name_3 = get_field('car_name_3')?>
+
 <div class="container-2">
 
 	<header>
@@ -71,31 +82,37 @@ Template Name: Home-Page
 								<h1><span class="red">cars</span> on sale</h1>
 							</div>
 
-							<div class="latest-cars">
-								<div class="cars car-1">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/911.jpg" alt="">
+							<div class="latest-cars-container">
+								<div class="latest-cars car-1">
+									<a href="<?php echo $url_1 ?>">
+										<img src="<?php echo $img_1 ?>" alt="<?php echo $name_1 ?>">
 										<div class="car-name">
-											<h4>PORSCHE 911 Series 993</h4>
+											<h4><?php echo $name_1 ?></h4>
 										</div>
+									</a>
 								</div>
 
-								<div class="cars car-2">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/131.jpg" alt="">
+								<div class="latest-cars car-2">
+									<a href="<?php echo $url_2 ?>">
+										<img src="<?php echo $img_2 ?>" alt="<?php echo $name_2 ?>">
 										<div class="car-name">
-											<h4>131 ABARTH</h4>
+											<h4><?php echo $name_2 ?></h4>
 										</div>
+									</a>
 								</div>
 
-								<div class="cars car-3">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/csw.jpg" alt="">
+								<div class="latest-cars car-3">
+									<a href="<?php echo $url_3 ?>">
+										<img src="<?php echo $img_3 ?>" alt="<?php echo $name_3 ?>">
 										<div class="car-name">
-											<h4>SIERRA COSWORTH 4X4</h4>
+											<h4><?php echo $name_3 ?></h4>
 										</div>
+									</a>
 								</div>
 							</div>
 
 							<button class="btn">
-								<a>more cars on sale</a>
+								<a href="<?php echo get_permalink( get_page_by_title( 'cars' ) ) ?>">more cars on sale</a>
 							</button>
 						</div>
 

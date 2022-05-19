@@ -20,7 +20,7 @@ navOpen.addEventListener("click", ()=> {
 
 ScrollTrigger.defaults({
   //toggleActions: "restart pause resume pause",
-  scroller: ".container-2",
+  scroller: ".container-2, .container-3",
 });
 
 let tl = gsap.timeline();
@@ -67,6 +67,13 @@ let tl7 = gsap.timeline({
   }
 });
 
+let tl8 = gsap.timeline({
+  scrollTrigger: {
+    start: "-70%",
+    trigger: ".cars-on-sale",
+  }
+});
+
 tl.from("a.custom-logo-link", {y:-100, opacity: 0}).
 from(".hamburger", {y:-100, opacity: 0}, "<").
 from(".hero-title h1", {x:-100, opacity: 0, stagger: 0.2}, "<+0.2");
@@ -79,7 +86,7 @@ tl3.from(".sec-title__about", { x: -100, opacity: 0})
 .from(".paragraph__about", { x: 100, opacity: 0}, "<+0.1");
 
 tl4.from(".sec-title__sale", { x: 100, opacity: 0})
-.from(".cars", { y: 100, opacity: 0, stagger: 0.2}, "<")
+.from(".latest-cars", { y: 100, opacity: 0, stagger: 0.2}, "<")
 .from("section.sale .wrap button", { y: 100, opacity: 0},">-0.3");
 
 tl5.from(".sec-title__services", { x: -100, opacity: 0})
@@ -93,6 +100,8 @@ tl6.from(".sec-title__do-you h1", { x: -100, opacity: 0, stagger: 0.1}, "<+0.1")
 tl7.from("footer.contact .sec-title", { x: -100, opacity: 0})
 .from(".contact-list", { x: -100, opacity: 0}, "<+0.1")
 .from(".links", { x: 100, opacity: 0}, "<+0.1");
+
+tl8.from(".car", { y: 100, opacity: 0, stagger: 0.1});
 
 
 

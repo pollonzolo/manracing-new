@@ -134,7 +134,7 @@ line-height: .8rem;
       }
     }
 
-    .latest-cars {
+    .latest-cars-container {
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -145,7 +145,7 @@ line-height: .8rem;
         margin: 3rem 0;
       }
 
-      .cars {
+      .latest-cars {
         position: relative;
         width: 40rem;
         overflow: hidden;
@@ -184,10 +184,6 @@ line-height: .8rem;
           margin: 0 0 3rem;
         }
       }
-    }
-
-    button.btn {
-      // justify-self: center;
     }
   }
 }

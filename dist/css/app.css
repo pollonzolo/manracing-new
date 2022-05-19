@@ -306,28 +306,28 @@ section.sale .wrap .sec-title {
     align-self: flex-end;
   }
 }
-section.sale .wrap .latest-cars {
+section.sale .wrap .latest-cars-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 @media only screen and (max-width: 50em) {
-  section.sale .wrap .latest-cars {
+  section.sale .wrap .latest-cars-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 3rem 0;
   }
 }
-section.sale .wrap .latest-cars .cars {
+section.sale .wrap .latest-cars-container .latest-cars {
   position: relative;
   width: 40rem;
   overflow: hidden;
 }
-section.sale .wrap .latest-cars .cars:hover img {
+section.sale .wrap .latest-cars-container .latest-cars:hover img {
   transform: scale(1);
 }
-section.sale .wrap .latest-cars .cars img {
+section.sale .wrap .latest-cars-container .latest-cars img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -337,21 +337,22 @@ section.sale .wrap .latest-cars .cars img {
   transform: scale(1.05);
   transition: ease-in-out 0.4s;
 }
-section.sale .wrap .latest-cars .cars .car-name {
+section.sale .wrap .latest-cars-container .latest-cars .car-name {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
 }
-section.sale .wrap .latest-cars .car-1,
-section.sale .wrap .latest-cars .car-2 {
+section.sale .wrap .latest-cars-container .car-1,
+section.sale .wrap .latest-cars-container .car-2 {
   margin-right: 3rem;
 }
 @media only screen and (max-width: 50em) {
-  section.sale .wrap .latest-cars .car-1,
-section.sale .wrap .latest-cars .car-2 {
+  section.sale .wrap .latest-cars-container .car-1,
+section.sale .wrap .latest-cars-container .car-2 {
     margin: 0 0 3rem;
   }
 }
+
 section.services {
   background: #383535;
   z-index: -1;
@@ -600,4 +601,78 @@ footer.contact .wrap .text-area {
   footer.contact .wrap .text-area .contact-list {
     margin: 3rem 0;
   }
+}
+.container-3 {
+  -ms-scroll-snap-type: none;
+      scroll-snap-type: none;
+  overflow-y: scroll;
+  height: 100vh;
+  z-index: -2;
+}
+
+.head-cars {
+  height: 70vh;
+}
+@media only screen and (max-width: 50em) {
+  .head-cars {
+    height: 40vh;
+  }
+}
+.head-cars .hero {
+  align-items: flex-end;
+  padding-bottom: 10rem;
+}
+@media only screen and (max-width: 50em) {
+  .head-cars .hero {
+    padding-bottom: 5rem;
+  }
+}
+
+section.cars-on-sale {
+  display: block;
+  padding: 0 7vw;
+}
+section.cars-on-sale .wrap {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: left;
+}
+section.cars-on-sale .wrap .sec-title {
+  line-height: 0.8rem;
+  margin-bottom: 5rem;
+}
+section.cars-on-sale .wrap .cars-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+@media only screen and (max-width: 50em) {
+  section.cars-on-sale .wrap .cars-container {
+    grid-template-columns: 1fr;
+    margin: 6rem 0;
+  }
+}
+section.cars-on-sale .wrap .cars-container .car {
+  position: relative;
+  overflow: hidden;
+}
+section.cars-on-sale .wrap .cars-container .car:hover img {
+  transform: scale(1);
+}
+section.cars-on-sale .wrap .cars-container .car img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+  transform: scale(1.05);
+  transition: ease-in-out 0.4s;
+}
+section.cars-on-sale .wrap .cars-container .car .car-name {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
 }

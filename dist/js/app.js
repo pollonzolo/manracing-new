@@ -31,7 +31,7 @@ navOpen.addEventListener("click", function () {
 });
 ScrollTrigger.defaults({
   //toggleActions: "restart pause resume pause",
-  scroller: ".container-2"
+  scroller: ".container-2, .container-3"
 });
 var tl = gsap.timeline();
 var tl2 = gsap.timeline({
@@ -70,6 +70,12 @@ var tl7 = gsap.timeline({
     trigger: ".contact"
   }
 });
+var tl8 = gsap.timeline({
+  scrollTrigger: {
+    start: "-70%",
+    trigger: ".cars-on-sale"
+  }
+});
 tl.from("a.custom-logo-link", {
   y: -100,
   opacity: 0
@@ -101,7 +107,7 @@ tl3.from(".sec-title__about", {
 tl4.from(".sec-title__sale", {
   x: 100,
   opacity: 0
-}).from(".cars", {
+}).from(".latest-cars", {
   y: 100,
   opacity: 0,
   stagger: 0.2
@@ -140,6 +146,11 @@ tl7.from("footer.contact .sec-title", {
   x: 100,
   opacity: 0
 }, "<+0.1");
+tl8.from(".car", {
+  y: 100,
+  opacity: 0,
+  stagger: 0.1
+});
 gsap.utils.toArray(btn).forEach(function (btn) {});
 var hover = gsap.to(btn, {
   scale: 1.05,

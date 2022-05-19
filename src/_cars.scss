@@ -1,0 +1,87 @@
+.container-3 {
+    scroll-snap-type: none;
+    overflow-y: scroll;
+    height: 100vh;
+
+    z-index: -2;
+  }
+
+  .head-cars {
+      height: 70vh;
+
+      @media only screen and (max-width: $bp-medium) {
+        height: 40vh;
+    }
+      .hero {
+        align-items: flex-end;
+        padding-bottom: 10rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding-bottom: 5rem;
+        }
+      }
+  }
+
+
+
+section.cars-on-sale {
+    display: block;
+    padding: 0 7vw;
+    // margin: 10rem 0;
+
+    .wrap {
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      text-align: left;
+  
+      .sec-title {
+        line-height: .8rem;
+        margin-bottom: 5rem;
+      }
+
+
+.cars-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
+        margin: 6rem 0;
+    }
+
+    .car {
+      position: relative;
+      
+      overflow: hidden;
+      
+
+      &:hover {
+
+        img {
+          
+          transform: scale(1);
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        filter: brightness(50%);
+        transform: scale(1.05);
+        transition: ease-in-out .4s;
+      }
+
+      .car-name {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+      }
+    }
+  }
+}}
