@@ -11,6 +11,7 @@ var navClosed = document.querySelector(".nav-closed");
 var navOpen = document.querySelector(".nav-open");
 var btn = document.querySelector("button.btn");
 var btn2 = document.querySelector("button.btn.do-you-btn");
+var menuLi = document.querySelectorAll("ul.nav__menu li");
 var tlMenuOpen = gsap.timeline({
   paused: true
 });
@@ -29,9 +30,15 @@ navOpen.addEventListener("click", function () {
   tlMenuOpen.timeScale(2);
   tlMenuOpen.reverse();
 });
+menuLi.forEach(function (li) {
+  return li.addEventListener("click", function () {
+    tlMenuOpen.timeScale(2);
+    tlMenuOpen.reverse();
+  });
+});
 ScrollTrigger.defaults({
   //toggleActions: "restart pause resume pause",
-  scroller: ".container-2, .container-3"
+  scroller: ".container, .container-2, .container-3"
 });
 var tl = gsap.timeline();
 var tl2 = gsap.timeline({
@@ -136,7 +143,7 @@ tl6.from(".sec-title__do-you h1", {
   x: 100,
   opacity: 0
 }, "<+0.1");
-tl7.from("footer.contact .sec-title", {
+tl7.from(".contact .sec-title", {
   x: -100,
   opacity: 0
 }).from(".contact-list", {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php bloginfo('language'); ?>">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,18 +28,30 @@
    <div class="line line-2"></div>
  </div>
 
-   <?php wp_nav_menu(
+ <?php if (is_page(array("home", "home-2"))):?>
 
-  					array(
-  						'theme_location'  => 'primary',
-  						'menu_class'      => 'nav__menu',
-  					)
-  				); ?>
- </div>
+ <?php wp_nav_menu(
+  array(
+    'theme_location'  => 'primary',
+    'menu_class'      => 'nav__menu',
+  )
+  ); ?>
 
+<?php else : ?>
+
+<?php wp_nav_menu(
+  array(
+    'theme_location'  => 'primary-2',
+    'menu_class'      => 'nav__menu',
+  )
+  ); ?>
+
+<?php endif; ?>
+
+ 
+</div>
 
 </nav>
 
 
-
-  <body <?php body_class( 'container' ); ?>>
+  

@@ -1,5 +1,5 @@
 <?php /*
-Template Name: Cars Page
+Template Name: Cars_en Page
 */ ?>
 
 <?php get_header(); ?>
@@ -14,7 +14,7 @@ Template Name: Cars Page
 
 		<div class="hero">
 			<div class="hero-title">
-				<h1>Auto in <span class="red">vendita</span></h1>
+				<h1>cars on <span class="red">sale</span></h1>
 			</div>
 		</div>
 

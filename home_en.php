@@ -1,5 +1,5 @@
 <?php /*
-Template Name: Home-Page
+Template Name: Home-Page_en
 */ ?>
 
 <?php get_header(); ?>
@@ -27,9 +27,9 @@ Template Name: Home-Page
 
 		<div class="hero">
 			<div class="hero-title">
-				<h1>le autostoriche</h1>
-				<h1>da corsa,</h1>
-				<h1>la nostra <span class="red">passione</span></h1>
+				<h1>historic</h1>
+				<h1>racing cars,</h1>
+				<h1>our <span class="red">passion</span></h1>
 			</div>
 		</div>
 
@@ -40,7 +40,7 @@ Template Name: Home-Page
 	    <section class="intro">
 				<div class="wrap">
 					<p>
-					La passione che ci accompagna da sempre e l'esperienza maturata in tanti anni di presenza attiva, sia a livello sportivo che tecnico, nel settore delle auto da corsa, ci consente di offrire a piloti, teams, preparatori, collezionisti o semplici appassionati, una gamma qualificata di prodotti e servizi.
+						The never-ending passion that accompanies us, and the experience grown in all the years of active presence both in the sporting and technical field, in the historic cars and racing sector, allows us to provide to drivers, teams, collectors or simple enthusiasts, a qualified variety of products and services.
 		      </p>
 					<h3>antonio maniero</h3>
 				</div>
@@ -60,16 +60,14 @@ Template Name: Home-Page
 						<div class="text-area">
 
 						<div class="title title__about">
-								<h3>Man Racing offre una gamma di servizi pensati per le autostoriche, in particolare da corsa</h3>
+								<h3>Man Racing offers a variety of services thought exclusively for the niche of historic racing cars.</h3>
 						</div>
 
 						<div class="paragraph paragraph__about">
 							<p>
-								Man Racing nasce da un’idea di Antonio Maniero, una vita trascorsa partecipando nel tempo libero, come pilota dilettante, alle più diverse discipline dell’automobilismo da corsa con le più svariate vetture.
-								Nel 2008 decide di coniugare la sua passione per il motorsport con una nuova attività che metta a disposizione di altri il bagaglio di esperienze maturato in oltre 300 competizioni: una gamma di servizi, pensati esclusivamente per la nicchia delle auto storiche, soprattutto da corsa, che possano rispondere alle necessità di chi vuole iniziare a praticare, ma anche di chi già pratica, questo affascinante settore dello sport automobilistico.
-								Vede quindi la luce Man-Racing, ramo motorsport dell’azienda di famiglia Man-Meccanica Engineering.
-								In questa attività è coadiuvato, a seconda dei casi, dai figli Andrea, Massimo e Paolo, da un gruppo di amici appassionati e da un network di operatori del settore dalle professionalità più diverse; questo genera un know-how complessivo tale da coprire in termini di qualità della risposta le richieste più varie.</p>
-							</div>
+	 						 Man Racing started from an idea of Antonio Maniero, who spent his life participating in free time, as an amateur driver in the most diverse car racing. On 2008 he decided to conjugate his passion for motorsport to a new activity, to make available to others his amount of experience matured in over 300 competitions: A range of services thought exclusively for the niche of historic cars, especially race ones, that can answer to the necessities of who wants to start practicing, but also who already practices this fascinating sector of motorsport. Then Man-Racing, motorsport branch of the family company Man-Meccanica Engineering, was born. He is assisted, depending on the case, by his sons Andrea, Massimo and Paolo, by a group of enthusiasts friends and a network made by operators of the field; this generates the overall know-how that can offer high quality answers to the most disparate requests.
+	 					 </p>
+						</div>
 					</div>
 				</div>
 
@@ -90,7 +88,7 @@ Template Name: Home-Page
 						<div class="wrap">
 
 							<div class="sec-title sec-title__sale">
-								<h1>Le ultime <span class="red">arrivate</span></h1>
+								<h1><span class="red">cars</span> on sale</h1>
 							</div>
 
 							<div class="latest-cars-container">
@@ -126,7 +124,7 @@ Template Name: Home-Page
 							</div>
 
 							<button class="btn">
-								<a href="<?php echo get_permalink( get_page_by_title( 'auto' ) ) ?>">le altre auto</a>
+								<a href="<?php echo get_permalink( get_page_by_title( 'cars' ) ) ?>">more cars on sale</a>
 							</button>
 						</div>
 
@@ -177,13 +175,13 @@ Template Name: Home-Page
 
 						<div class="wrap">
 							<div class="sec-title sec-title__do-you">
-								<h1>vuoi <span class="red">vendere</span></h1>
-								<h1>la tua <span class="red">autostorica</span>?</h1>
+								<h1>do you want to <span class="red">sell</span></h1>
+								<h1>your <span class="red">historic car</span>?</h1>
 							</div>
 							<!-- <p>Contact us by e-mail or call us. <br>We will be happy to help you!</p> -->
 
 							<button class="btn do-you-btn">
-								<a href="#contact">contattaci</a>	
+								<a>let us know!</a>	
 							</button>
 
 							<div class="do-you-img">

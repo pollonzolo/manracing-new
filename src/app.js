@@ -2,6 +2,7 @@ const navClosed = document.querySelector(".nav-closed");
 const navOpen = document.querySelector(".nav-open");
 const btn = document.querySelector("button.btn");
 const btn2 = document.querySelector("button.btn.do-you-btn");
+const menuLi = document.querySelectorAll("ul.nav__menu li");
 
 let tlMenuOpen = gsap.timeline({paused: true});
 tlMenuOpen.to( ".nav-links", {right: 0, duration: 0.2})
@@ -9,18 +10,25 @@ tlMenuOpen.to( ".nav-links", {right: 0, duration: 0.2})
 
 navClosed.addEventListener("click", ()=> {
   tlMenuOpen.play().timeScale(1);
-
 });
 
 navOpen.addEventListener("click", ()=> {
   tlMenuOpen.timeScale(2);
   tlMenuOpen.reverse();
-
 });
+
+menuLi.forEach(li => li.addEventListener("click", ()=> {
+  tlMenuOpen.timeScale(2);
+  tlMenuOpen.reverse();
+})
+);
+
+
+
 
 ScrollTrigger.defaults({
   //toggleActions: "restart pause resume pause",
-  scroller: ".container-2, .container-3",
+  scroller: ".container, .container-2, .container-3",
 });
 
 let tl = gsap.timeline();
@@ -97,7 +105,7 @@ tl6.from(".sec-title__do-you h1", { x: -100, opacity: 0, stagger: 0.1}, "<+0.1")
 .from("section.do-you .wrap button", { x: -100, opacity: 0}, "<+0.1")
 .from(".do-you-img", { x: 100, opacity: 0}, "<+0.1");
 
-tl7.from("footer.contact .sec-title", { x: -100, opacity: 0})
+tl7.from(".contact .sec-title", { x: -100, opacity: 0})
 .from(".contact-list", { x: -100, opacity: 0}, "<+0.1")
 .from(".links", { x: 100, opacity: 0}, "<+0.1");
 

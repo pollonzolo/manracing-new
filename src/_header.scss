@@ -10,7 +10,7 @@ nav {
   z-index: 2;
 
   @media only screen and (max-width: $bp-medium) {
-    height: 15vh;
+    height: 0vh;
     // margin-top: 1rem;
   }
 
@@ -101,25 +101,20 @@ nav {
       right: 7vw;
     }
 
-    .menu-primary-container {
-      text-align: center;
+    
 
 
       ul.nav__menu {
         li {
+          text-align: center;
           list-style: none;
-
-
-
-
-
 
           a {
             position: relative;
             color: white;
             text-decoration: none;
             font-family: $font-secondary;
-            font-size: 10rem;
+            font-size: 8rem;
             transition: ease .4s;
 
 
@@ -170,8 +165,25 @@ nav {
 
           }
         }
+
+        li.lang-item a {
+          font-size: 4rem;
+
+          &::before {
+            bottom: .4rem;
+            height: .3rem;
+          }
+
+          &::after {
+            bottom: .3rem;
+            height: .9rem;
+          }
+
+
+        }
+
       }
-    }
+    
 
 
   }
