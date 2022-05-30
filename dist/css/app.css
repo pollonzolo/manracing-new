@@ -42,6 +42,7 @@ span.red {
       scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 footer,
@@ -332,6 +333,7 @@ section.sale .wrap .latest-cars-container .latest-cars {
 }
 section.sale .wrap .latest-cars-container .latest-cars:hover img {
   transform: scale(1);
+  filter: brightness(90%);
 }
 section.sale .wrap .latest-cars-container .latest-cars img {
   width: 100%;
@@ -756,7 +758,8 @@ section.cars-on-sale .cars-container .car .car-name {
   }
 }
 .single-car__title {
-  margin-bottom: 3rem;
+  width: 70%;
+  margin-bottom: 2rem;
 }
 
 .single-car__gallery {

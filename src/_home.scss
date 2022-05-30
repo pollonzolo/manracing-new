@@ -154,8 +154,8 @@ line-height: .8rem;
         &:hover {
 
           img {
-            
             transform: scale(1);
+            filter: brightness(90%);
           }
 
         }

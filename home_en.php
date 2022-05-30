@@ -181,7 +181,7 @@ Template Name: Home-Page_en
 							<!-- <p>Contact us by e-mail or call us. <br>We will be happy to help you!</p> -->
 
 							<button class="btn do-you-btn">
-								<a>let us know!</a>	
+								<a href="#contact">let us know!</a>	
 							</button>
 
 							<div class="do-you-img">
