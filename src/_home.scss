@@ -3,7 +3,7 @@ header {
   width: 100%;
   height: 100vh;
   scroll-snap-align: start;
-  // @media only screen and (max-width: $bp-medium) {
+  // @media only screen and (max-width: $bp-large) {
   //   height: 80vh;
   // }
   & img {
@@ -15,7 +15,7 @@ header {
     object-fit: cover;
     pointer-events: none;
     z-index: -2;
-    filter: brightness(50%);
+    filter: brightness(35%);
   }
 
   .hero {
@@ -24,16 +24,39 @@ header {
     display: flex;
     align-items: center;
     padding-left: 7vw;
+    color: white;
 
-    .hero-title {
-      color: white;
-      font-family: $font-secondary;
+    &-it {
+      @media only screen and (max-width: $bp-large) {
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+      }
+      .hero-title {
+        font-family: $font-secondary;
+
+        h1 {
+          font-size: 6.8rem;
+
+          @media only screen and (max-width: $bp-large) {
+            font-size: 6.8rem;
+          }
+
+          span {
+            font-size: 18rem;
+
+            @media only screen and (max-width: $bp-large) {
+              font-size: 6.8rem;
+            }
+          }
+        }
+      }
     }
 
     h3 {
       font-size: 4rem;
       letter-spacing: 2px;
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: $bp-large) {
         font-size: 2.5rem;
       }
     }
@@ -59,7 +82,7 @@ section.intro {
       font-size: 3.2rem;
       line-height: 1.7;
       margin-bottom: 3rem;
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: $bp-large) {
         font-size: 2.4rem;
         line-height: 1.5;
         margin-bottom: 2rem;
@@ -74,6 +97,7 @@ section.intro {
 }
 ///////////// SECTION 2
 section.about {
+  background: $color-black-light;
   & img {
     position: absolute;
     top: 0;
@@ -124,11 +148,12 @@ section.about {
 }
 ///////////// SECTION 3
 section.sale {
+  text-align: center;
   .wrap {
     align-items: center;
 
     .sec-title {
-line-height: .8rem;
+      line-height: 0.8rem;
       @media only screen and (min-width: $bp-small) {
         align-self: flex-end;
       }
@@ -138,7 +163,7 @@ line-height: .8rem;
       width: 100%;
       display: flex;
       justify-content: space-between;
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: $bp-large) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -149,15 +174,14 @@ line-height: .8rem;
         position: relative;
         width: 40rem;
         overflow: hidden;
-        
 
-        &:hover {
-
-          img {
-            transform: scale(1);
-            filter: brightness(90%);
+        @media (hover: hover) {
+          &:hover {
+            img {
+              transform: scale(1);
+              filter: brightness(90%);
+            }
           }
-
         }
 
         img {
@@ -167,7 +191,7 @@ line-height: .8rem;
           z-index: -1;
           filter: brightness(50%);
           transform: scale(1.05);
-          transition: ease-in-out .4s;
+          transition: ease-in-out 0.4s;
         }
 
         .car-name {
@@ -180,7 +204,7 @@ line-height: .8rem;
       .car-1,
       .car-2 {
         margin-right: 3rem;
-        @media only screen and (max-width: $bp-medium) {
+        @media only screen and (max-width: $bp-large) {
           margin: 0 0 3rem;
         }
       }
@@ -249,7 +273,7 @@ section.do-you {
 
     .sec-title h1 {
       @media only screen and (max-width: $bp-large) {
-        font-size: 10rem;
+        font-size: 8rem;
       }
 
       @media only screen and (max-width: $bp-small) {
@@ -257,11 +281,10 @@ section.do-you {
       }
 
       br {
-        @media only screen and (max-width: $bp-medium) {
+        @media only screen and (max-width: $bp-large) {
           display: none;
         }
       }
-
     }
 
     button.btn {

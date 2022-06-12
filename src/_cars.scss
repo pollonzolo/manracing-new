@@ -1,81 +1,72 @@
+.head-cars {
+  height: 70vh;
 
-
-.container-2 {
-  scroll-snap-type: none;
-  overflow-y: scroll;
-  height: 100vh;
-
-  z-index: -2;
-}
-
-.container-3 {
-    // scroll-snap-type: none;
-    // overflow-y: scroll;
-    // height: 100vh;
-
-    z-index: -2;
+  @media only screen and (max-width: $bp-medium) {
+    height: 40vh;
   }
 
-  .head-cars {
-      height: 70vh;
+  img {
+    filter: brightness(35%);
+  }
+  .hero {
+    align-items: flex-end;
+    padding-bottom: 10rem;
 
-      @media only screen and (max-width: $bp-medium) {
-        height: 40vh;
+    @media only screen and (max-width: $bp-large) {
+      padding-bottom: 5rem;
     }
-      .hero {
-        align-items: flex-end;
-        padding-bottom: 10rem;
 
-        @media only screen and (max-width: $bp-medium) {
-            padding-bottom: 5rem;
+    .hero-title {
+      h1 {
+        @media only screen and (max-width: $bp-large) {
+          font-size: 6rem;
         }
       }
+    }
   }
-
-
-section.cars-on-sale {
-    display: flex;
-    padding: 10rem 7vw;
-
-     @media only screen and (max-width: $bp-medium) {
-       padding: 0 7vw;
-   }
-
-   @media only screen and (min-width: $bp-medium) {
-    height: auto;
 }
 
-  
-      .sec-title {
-        line-height: .8rem;
-        margin-bottom: 5rem;
-      }
+section.cars-on-sale {
+  display: flex;
+  padding: 10rem 7vw;
 
+  @media only screen and (max-width: $bp-large) {
+    padding: 0 7vw;
+  }
 
-.cars-container {
+  @media only screen and (min-width: $bp-large) {
+    height: auto;
+  }
+
+  .sec-title {
+    line-height: 0.8rem;
+    margin-bottom: 5rem;
+  }
+
+  .cars-container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
-    @media only screen and (max-width: $bp-medium) {
-        grid-template-columns: 1fr;
-        margin: 6rem 0;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: 1fr;
+      margin: 6rem 0;
     }
 
     .car {
       position: relative;
-      
+
       overflow: hidden;
-      
 
-      &:hover {
-
-        img {
-          
-          transform: scale(1);
-          filter: brightness(90%);
+      @media (hover: hover) {
+        &:hover {
+          img {
+            transform: scale(1);
+            filter: brightness(90%);
+          }
         }
-
       }
 
       img {
@@ -85,7 +76,7 @@ section.cars-on-sale {
         z-index: -1;
         filter: brightness(60%);
         transform: scale(1.05);
-        transition: ease-in-out .4s;
+        transition: ease-in-out 0.4s;
       }
 
       .car-name {
@@ -97,13 +88,12 @@ section.cars-on-sale {
   }
 }
 
-
 //////// SINGLE CAR ////////
 
 // .single-car {
 //   padding: 10rem 7vw;
 //   display: block;
-  
+
 //   @media only screen and (min-width: 50em) {
 //   height: 100%;
 //   }
@@ -116,10 +106,6 @@ section.cars-on-sale {
 //   &__description {
 //     margin-bottom: 10rem;
 //   }
-
-
-
-
 
 // &__gallery {
 //   width: 100%;
@@ -144,49 +130,54 @@ section.cars-on-sale {
 //////// SINGLE CAR ////////
 
 .head-single-car {
-
   @media only screen and (max-width: $bp-medium) {
     height: 40vh;
-}
+  }
   .hero {
     align-items: flex-end;
     padding-bottom: 10rem;
 
-    @media only screen and (max-width: $bp-medium) {
-        padding-bottom: 5rem;
+    @media only screen and (max-width: $bp-large) {
+      padding-bottom: 5rem;
+    }
+
+    .hero-title {
+      h1 {
+        @media only screen and (max-width: $bp-large) {
+          font-size: 6rem;
+        }
+      }
     }
   }
 }
 
- .single-car {
-   flex-direction: column;
+.single-car {
+  flex-direction: column;
 
-   .wrap {
-    @media only screen and (min-width: $bp-medium) {
+  .wrap {
+    @media only screen and (min-width: $bp-large) {
       width: fit-content;
       justify-content: center;
+    }
   }
-     
-   }
-   
-   &__title {
+
+  &__title {
     width: 70%;
-     margin-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+}
 
-   }
+.single-car__gallery {
+  position: relative;
+  padding: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .single-car__gallery {
-    position: relative;
-    padding: 0;
-  
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-    &--nr {
+  &--nr {
     position: absolute;
     bottom: 2rem;
     right: 7rem;
@@ -196,14 +187,10 @@ section.cars-on-sale {
     color: $color-white;
     opacity: 1;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
       bottom: 1rem;
-    right: 4rem;
-    font-size: 6rem;
-  }
+      right: 4rem;
+      font-size: 6rem;
     }
-
-    
   }
-
-
+}

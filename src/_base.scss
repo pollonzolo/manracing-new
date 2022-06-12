@@ -24,7 +24,6 @@ html {
   @media only screen and (max-width: $bp-largest) {
     font-size: 50%;
   }
-  
 }
 
 body {
@@ -36,7 +35,7 @@ body {
 
 html,
 body {
-overflow: hidden;
+  overflow: hidden;
 }
 
 ////////////// MARGINS
@@ -56,6 +55,10 @@ span.red {
 
 .container {
   scroll-snap-type: y mandatory;
+  @media only screen and (max-width: $bp-large) {
+    scroll-snap-type: y proximity;
+  }
+
   overflow-y: scroll;
   height: 100vh;
   scroll-behavior: smooth;
@@ -65,15 +68,15 @@ footer,
 section {
   padding: 0 7vw;
   position: relative;
-  scroll-snap-align: start  ;
+  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  @media only screen and (min-width: $bp-medium) {
+  @media only screen and (min-width: $bp-large) {
     height: 100vh;
   }
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     padding: 10rem 7vw;
   }
 
@@ -91,11 +94,9 @@ section {
 
     @media only screen and (min-width: $bp-largest) {
       height: 47rem;
-    width: 120rem;
-    margin: 0 auto;
+      width: 120rem;
+      margin: 0 auto;
     }
-
-    
   }
 
   .background-text {
@@ -131,7 +132,7 @@ h1 {
   letter-spacing: 4px;
   line-height: 1;
   font-family: $font-secondary;
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-large) {
     letter-spacing: 1px;
     font-size: 8rem;
   }
@@ -147,7 +148,7 @@ h3 {
   font-family: $font-secondary;
   font-size: 4.8rem;
   color: $color-red;
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     font-size: 3.6rem;
   }
 }
@@ -156,7 +157,7 @@ h4 {
   font-family: $font-secondary;
   font-size: 3.2rem;
   color: $color-white;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 p {
@@ -164,7 +165,7 @@ p {
   font-size: 1.6rem;
   line-height: 1.5;
 
-  // @media only screen and (max-width: $bp-medium) {
+  // @media only screen and (max-width: $bp-large) {
   //   font-size: 1.6rem;
   // }
 }
@@ -178,7 +179,6 @@ a {
   color: $color-white;
   font-family: $font-primary;
   z-index: 1;
-
 }
 ////////////// BUTTONS
 button.btn {
@@ -193,5 +193,4 @@ button.btn {
   color: $color-white;
   border: 2px solid #ff2727;
   cursor: pointer;
-  }
-
+}

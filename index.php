@@ -6,17 +6,17 @@
 
     while( have_posts() ): the_post(); ?>
 
-    <h2><?php the_title(); ?></h2>
+<h2><?php the_title(); ?></h2>
 
-    <div class="thumbnail-img"><?php the_post_thumbnail('large'); ?></div>
+<div class="thumbnail-img"><?php the_post_thumbnail('large'); ?></div>
 
-      <small>Posted on: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>, in <?php the_category(); ?></small>
+<small>Posted on: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>, in <?php the_category(); ?></small>
 
-      <p><?php the_content(); ?></p>
+<p><?php the_content(); ?></p>
 
-      <hr>
+<hr>
 
-    <?php endwhile;
+<?php endwhile;
 
   endif;
 

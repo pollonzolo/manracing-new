@@ -1,5 +1,3 @@
-
-
 <?php get_header(); ?>
 
 <?php $car_title = get_field('car_title_complete')?>
@@ -11,69 +9,68 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-<header class="head-single-car">
-<?php the_post_thumbnail(); ?>
+        <header class="head-single-car">
+            <?php the_post_thumbnail(); ?>
 
-		<div class="hero">
-			<div class="hero-title">
-				<h1><?php the_title(); ?></h1>
-			</div>
-		</div>
+            <div class="hero">
+                <div class="hero-title">
+                    <h1><?php the_title(); ?></h1>
+                </div>
+            </div>
 
-	</header>
+        </header>
 
-    <section class="single-car">
+        <section class="single-car">
 
-    <div class="wrap">
-    <div class="single-car__title">
-        <h3><?php echo $car_title ?></h3>
-      </div>
-      
-      <div class="single-car__description"><?php the_content(); ?></div>
-    </div>
+            <div class="wrap">
+                <div class="single-car__title">
+                    <h3><?php echo $car_title ?></h3>
+                </div>
 
-      
-
-    </section>
-
-    <section class="single-car__gallery">
-    <img src="<?php echo $img_1 ?>" alt="<?php the_title(); ?>-1">
-    <div class="single-car__gallery--nr">
-    <span>01</span>
-    </div>
-    </section>
-
-    <section class="single-car__gallery">
-    <img src="<?php echo $img_2 ?>" alt="<?php the_title(); ?>-1">
-    <div class="single-car__gallery--nr">
-    <span>02</span>
-    </div>
-    </section>
-
-    <section class="single-car__gallery">
-    <img src="<?php echo $img_3 ?>" alt="<?php the_title(); ?>-1">
-    <div class="single-car__gallery--nr">
-    <span>03</span>
-    </div>
-    </section>
-    
-    <section class="single-car__gallery">
-    <img src="<?php echo $img_4 ?>" alt="<?php the_title(); ?>-1">
-    <div class="single-car__gallery--nr">
-    <span>04</span>
-    </div>
-    </section>
+                <div class="single-car__description"><?php the_content(); ?></div>
+            </div>
 
 
-  </section>
+
+        </section>
+
+        <section class="single-car__gallery">
+            <img src="<?php echo $img_1 ?>" alt="<?php the_title(); ?>-1">
+            <div class="single-car__gallery--nr">
+                <span>01</span>
+            </div>
+        </section>
+
+        <section class="single-car__gallery">
+            <img src="<?php echo $img_2 ?>" alt="<?php the_title(); ?>-1">
+            <div class="single-car__gallery--nr">
+                <span>02</span>
+            </div>
+        </section>
+
+        <section class="single-car__gallery">
+            <img src="<?php echo $img_3 ?>" alt="<?php the_title(); ?>-1">
+            <div class="single-car__gallery--nr">
+                <span>03</span>
+            </div>
+        </section>
+
+        <section class="single-car__gallery">
+            <img src="<?php echo $img_4 ?>" alt="<?php the_title(); ?>-1">
+            <div class="single-car__gallery--nr">
+                <span>04</span>
+            </div>
+        </section>
 
 
+        </section>
 
 
 
 
 
-<?php get_footer(); ?>
 
+
+        <?php get_footer(); ?>
